@@ -1,0 +1,68 @@
+/////////////////////////////////////////////////////////////////////// EMAIL TOAST
+
+
+document.querySelectorAll('.email-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    
+    // stop the browser from instantly leaving
+    e.preventDefault();
+
+    // Copy to clipboard
+    const email = "romain.br97@gmail.com";
+    navigator.clipboard.writeText(email)
+
+
+    // Show toast
+     .then(() => {
+        // Show the toast for THIS link
+        const toast = link.parentElement.querySelector('.email-toast');
+        toast.classList.add('show');
+        
+     // Remove toast
+     setTimeout(() => toast.classList.remove('show'), 2000);
+     
+    })
+  });
+});
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////// PDF TOAST
+
+document.querySelectorAll('.pdf-link').forEach(link => {
+  link.addEventListener('click', function(e) {
+    
+    // stop the browser from instantly leaving
+    e.preventDefault();
+
+  // Trigger PDF download
+    const pdfLink = document.createElement('a');
+    pdfLink.href = 'assets/TESTPortfolio_RomainBR.pdf'; // path to your PDF
+    pdfLink.download = 'Portfolio_RomainBR.pdf';
+    document.body.appendChild(pdfLink);
+    pdfLink.click();
+    document.body.removeChild(pdfLink);
+
+  // Show toast
+    const toast = link.parentElement.querySelector('.pdf-toast');
+    toast.classList.add('show');
+
+  // Remove toast
+    setTimeout(() => toast.classList.remove('show'), 2000);
+  });
+});
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////// CLICK FLIP
+
+  document.querySelectorAll('.flip-card').forEach(card => {
+    card.addEventListener('click', () => {
+      card.classList.toggle('is-flipped');
+    });
+  });
