@@ -103,7 +103,7 @@ a:focus {
 }
 
 .text-portfolio {
-  font-size: 15px;
+  font-size: 12px;
   line-height: 90%;
   text-transform: uppercase;
   writing-mode: vertical-lr;
@@ -112,7 +112,7 @@ a:focus {
 }
 
 .text-link{
-  font-size: 20px;
+  font-size: 15px;
   line-height: 90%;
   padding: 0 2px;
   text-transform: uppercase;
@@ -142,4 +142,5 @@ a:focus {
   opacity: 1;
   visibility: visible;
 }
+
 
