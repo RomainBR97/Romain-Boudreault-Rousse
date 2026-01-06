@@ -42,8 +42,8 @@
 }
 
 .portraits img {
-  max-height: 75%;
-  max-width: 75%;
+  max-height: 5%;
+  max-width: 5%;
   object-fit: contain;
   pointer-events: none;
 }
@@ -126,6 +126,7 @@
   word-break: break-word;
 
 }
+
 
 
 
