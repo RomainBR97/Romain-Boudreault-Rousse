@@ -49,6 +49,8 @@
   object-fit: contain;
   display: block;
   pointer-events: none;
+    flex-shrink: 1;
+  flex-grow: 0;
 }
 
 .Photo {
@@ -129,6 +131,7 @@
   word-break: break-word;
 
 }
+
 
 
 
