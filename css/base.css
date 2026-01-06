@@ -95,7 +95,7 @@ a:focus {
 
 
 .text-outside{
-  font-size: 15px;
+  font-size: 12px;
   line-height: 90%;
   padding: 2px;
   text-transform: uppercase;
@@ -142,3 +142,4 @@ a:focus {
   opacity: 1;
   visibility: visible;
 }
+
