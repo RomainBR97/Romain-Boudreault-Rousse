@@ -31,7 +31,6 @@ min-height: 15px;
   outline: 1px solid black;
   position:relative;
   padding: 1px;
-   box-sizing: border-box;
 }
 
 .row01{grid-row: 1;}
@@ -143,6 +142,7 @@ a:focus {
   opacity: 1;
   visibility: visible;
 }
+
 
 
 
