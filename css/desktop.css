@@ -32,7 +32,7 @@
 
 
 .text-flip{
-  font-size: 15px;
+  font-size: 12px;
   overflow-y: auto;
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -121,3 +121,4 @@
   word-wrap: break-word;
   word-break: break-word;
 }
+
